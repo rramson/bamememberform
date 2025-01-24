@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<form action="https://formsubmit.co/7236f9e9132ee77d99d4f2350055f9ff" method="POST">
+	<form method="POST" action="https://formsubmit.co/7236f9e9132ee77d99d4f2350055f9ff">
 	<!-- Honeypot -->
 	<input type="text" name="_honey" style="display: none;" />
 
@@ -41,25 +41,25 @@
 		
 		<p id="rcorner2label">Tell Us Your Name</p>
 		<p id="rcorners2">		
-			<label for="memberTitle"><b>Title:</b></label><br>
+			<label for="memberTitle"><b>Select your title:</b></label><br>
 		
-			<input type="checkbox" name="Member&nbsp;Title" id="RV" value="RV" />
+			<input type="radio" name="Member&nbsp;Title" id="RV" value="RV" />
 			<label for="REV">Reverend</label>&Tab;
 		
-			<input type="checkbox" name="Member&nbsp;Title" id="EV" value="EV" />
+			<input type="radio" name="Member&nbsp;Title" id="EV" value="EV" />
 			<label for="EV">Evangelist</label>&Tab;
 
-			<input type="checkbox" name="Member&nbsp;Title" id="DR" value="DR" />
+			<input type="radio" name="Member&nbsp;Title" id="DR" value="DR" />
 			<label for="DR">Doctor (MD, PhD, etc.)</label>
 			<br>
 
-			<input type="checkbox" name="Member&nbsp;Title" id="MR" value="MR" />
+			<input type="radio" name="Member&nbsp;Title" id="MR" value="MR" />
 			<label for="MR">Mr.</label>&Tab;
 		
-			<input type="checkbox" name="Member&nbsp;Title" id="MRS" value="MRS" />
+			<input type="radio" name="Member&nbsp;Title" id="MRS" value="MRS" />
 			<label for="MRS">Mrs.</label>&Tab;
 		
-			<input type="checkbox" name="Member&nbsp;Title" id="MS" value="MS" />
+			<input type="radio" name="Member&nbsp;Title" id="MS" value="MS" />
 			<label for="MS">Ms.</label>
 			<br>
 				
@@ -137,10 +137,10 @@
 			<label for="MaritalStatus"><b>Marital Status:</b></label>
 			<br>
 			<select name="Marital&nbsp;Status" id="MaritalStatus" required>
-				<option value="S">Single</option>
-				<option value="M">Married</option>
-				<option value="W">Widow</option>
-				<option value="D">Divorced</option>
+				<option value="S" name="Single">Single</option>
+				<option value="M" name="Married">Married</option>
+				<option value="W" name="Widow">Widow</option>
+				<option value="D" name="Divorce">Divorced</option>
 			</select>
 			<br><br>
 		
@@ -179,14 +179,13 @@
 			<br>
 			<input type="text" name="Previous&nbsp;Church" id="PrevChurch" value="" />
 			<br>
-			<label for="PrevChurchAddr">Previous Church City & State:</label>
+			<label for="PrevChurchAddr">Previous Church Location (City & State):</label>
 			<br>
 			<input type="text" name="Previous&nbsp;Church&nbsp;Address" id="PrevChurchAddr" value="" />
 			<br>
 			<br>
 		
 			<label for="WorkStatus">Are you employed?</label>
-			<br>
 			<br>
 			<input type="radio" name="Employed" value="Yes" />
 			<label for="Yes">Yes</label>&Tab;
@@ -212,46 +211,97 @@
 		</p>
 		<br>
 		
-		<p id="rcorner2tablelabel">Additional Household Members</p>
-		
-		<table id="houseHold" name="houseHold" align="center">
-			<th>Full Name</th>
-			<th>Date of Birth</th>
-			<th>Gender</th>
-			<th>Baptized</th>
-			<th>Relationship to Member</th>
+		<p id="rcorner2label">Additional Household Members</p>
+		<p id="rcorners2">
+			<label for="AddFamName1">Full Name:</label>
+			<br>	
+			<input type="text" name="Additional&nbsp;Family&nbsp;Name" id="AddFamName1" value="" />
+			<br>
 			
-			<tr>
-				<td>
-					<input type="text" name="Additional&nbsp;Family&nbsp;Name" id="AddFamName" value="" />
-					<br>
-				</td>
-				<td>
-					<input type="date" name="Additional&nbsp;Family&nbsp;DOB" id="AddFamDOB" value="" />
-					<br>
-				</td>
-				<td>
-					<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" value="Male" />
-					<label for="Male">Male</label>&Tab;
-					
-					<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" value="Female"/>
-					<label for="Female">Female</label>
-				</td>
-				<td>
-					<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" value="Yes" />
-					<label for="Yes">Yes</label>&Tab;
-					<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" value="No" />
-					<label for="No">No</label>
-				</td>
-				<td>
-					<input type="text" name="How&nbsp;Related" id="AddFamRelated" value="" />
-				</td>
-			</tr>
-		</table>
+			<label for="AddFamDOB1">Date of Birth</label>
+			<input type="date" name="Additional&nbsp;Family&nbsp;DOB" id="AddFamDOB1" value="" />
+			<br><br>
+
+			<label for="AddFamGender1">Gender</label>
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" id="AddFamGender1" value="Male" />
+			<label for="Male">Male</label>&Tab;
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" id="AddFamGender1" value="Female"/>
+			<label for="Female">Female</label>
+			<br><br>
+
+			<label for="AddFamSaved1">Saved?</label>
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" id="AddFamSaved1" value="Yes" />
+			<label for="Yes">Yes</label>&Tab;
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" id="AddFamSaved1" value="No" />
+			<label for="No">No</label>
+			<br><br>
+
+			<label for="AddFamRelated1">Relationship to You?</label>
+			<br>
+			<input type="text" name="How&nbsp;Related" id="AddFamRelated1" value="" />
+			<br><br>
+		</p>
 		<br>
+		<p id="rcorner2label">Additional Household Members</p>
+		<p id="rcorners2">
+			<label for="AddFamName2">Full Name:</label>
+			<br>	
+			<input type="text" name="Additional&nbsp;Family&nbsp;Name" id="AddFamName2" value="" />
+			<br>
 			
-		<button type="button" onClick="addRow()">Add Row</button>
-		<button type="button" onClick="delRow()">Delete Row</button>
+			<label for="AddFamDOB2">Date of Birth</label>
+			<input type="date" name="Additional&nbsp;Family&nbsp;DOB" id="AddFamDOB2" value="" />
+			<br><br>
+
+			<label for="AddFamGender2">Gender</label>
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" id="AddFamGender2" value="Male" />
+			<label for="Male">Male</label>&Tab;
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" id="AddFamGender2" value="Female"/>
+			<label for="Female">Female</label>
+			<br><br>
+
+			<label for="AddFamSaved2">Saved?</label>
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" id="AddFamSaved2" value="Yes" />
+			<label for="Yes">Yes</label>&Tab;
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" id="AddFamSaved2" value="No" />
+			<label for="No">No</label>
+			<br><br>
+
+			<label for="AddFamRelated2">Relationship to You?</label>
+			<br>
+			<input type="text" name="How&nbsp;Related" id="AddFamRelated2" value="" />
+			<br><br>
+		</p>
+		<br>
+		<p id="rcorner2label">Additional Household Members</p>
+		<p id="rcorners2">
+			<label for="AddFamName3">Full Name:</label>
+			<br>	
+			<input type="text" name="Additional&nbsp;Family&nbsp;Name" id="AddFamName3" value="" />
+			<br>
+			
+			<label for="AddFamDOB3">Date of Birth</label>
+			<input type="date" name="Additional&nbsp;Family&nbsp;DOB" id="AddFamDOB3" value="" />
+			<br><br>
+
+			<label for="AddFamGender3">Gender</label>
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" id="AddFamGender3" value="Male" />
+			<label for="Male">Male</label>&Tab;
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender" id="AddFamGender3" value="Female"/>
+			<label for="Female">Female</label>
+			<br><br>
+
+			<label for="AddFamSaved3">Saved?</label>
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" id="AddFamSaved3" value="Yes" />
+			<label for="Yes">Yes</label>&Tab;
+			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved" id="AddFamSaved3" value="No" />
+			<label for="No">No</label>
+			<br><br>
+
+			<label for="AddFamRelated3">Relationship to You?</label>
+			<br>
+			<input type="text" name="How&nbsp;Related" id="AddFamRelated3" value="" />
+			<br><br>
 		</p>
 		<br>
 	<input type="hidden" name="_next" value="thanks.html" />
