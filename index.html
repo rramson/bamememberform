@@ -6,22 +6,6 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bethel_membership_form.css" />
 	<script type="text/javascript" src="scripts/external.js"></script>
-	<script>
-		function validateEmail(emailId) {
-		var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    			if(emailId.value.match(mailformat))
-        		{
-            			document.form1.text1.focus();
-            			return true;
-        		}
-    			else
-        		{
-            			alert("Invalid email address.");
-            			document.form1.text1.focus();
-            			return false;
-        		}
-		}
-	</script>
 </head>
 <body>
 
@@ -108,7 +92,7 @@
 			<input type="text" name="State" id="State" value="" placeholder="DE" minlength="2" maxlength="2" /><br>
 			
 			<label for="ZipCode">Zip Code</label><br>
-			<input type="text" name="Zip&nbsp;Code" id="ZipCode" value="" required minlength="5" maxlength="5" />
+			<input type="text" name="Zip&nbsp;Code" id="ZipCode" value="" minlength="5" maxlength="5" />
 		</p><br>
 		
 		<p id="rcorner2label">How Can We Contact You?</p>
