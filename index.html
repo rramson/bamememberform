@@ -101,9 +101,11 @@
 			<br>
 			<input type='text' name='email' />
 			<br><br>
-			<label for="MobileNumber"><b>Mobile Number:</b></label>
+			<label for="MobileNumber"><b>Mobile Number:</b>
+			<small>Format: 302-555-5555</small>
+			</label>
 			<br>
-			<input type="tel" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="302-555-1111" pattern="[0-9\-\+\(\)\s]+" maxLength="12" minLength="10" />
+			<input type="tel" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="302-555-1111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxLength="12" minLength="10" />
 			<br>			
 			<label for="AltNumber"><b>Alternate Number:</b></label>
 			<br>
