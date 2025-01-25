@@ -6,6 +6,22 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bethel_membership_form.css" />
 	<script type="text/javascript" src="scripts/external.js"></script>
+	<script>
+		function validateEmail(emailId) {
+		var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    			if(emailId.value.match(mailformat))
+        		{
+            			document.form1.text1.focus();
+            			return true;
+        		}
+    			else
+        		{
+            			alert("Invalid email address.");
+            			document.form1.text1.focus();
+            			return false;
+        		}
+		}
+	</script>
 </head>
 <body>
 
@@ -324,22 +340,6 @@
 			</label>
 			<br>
 		</p>
-	<script>
-		function validateEmail(emailId) {
-		var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    			if(emailId.value.match(mailformat))
-        		{
-            			document.form1.text1.focus();
-            			return true;
-        		}
-    			else
-        		{
-            			alert("Invalid email address.");
-            			document.form1.text1.focus();
-            			return false;
-        		}
-		}
-	</script>
 	<input type="submit" value="Submit" onclick="validateEmail(document.form1.email)" />
 	</form>
 </body>
