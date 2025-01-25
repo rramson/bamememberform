@@ -77,4 +77,14 @@ function addRow() {
 
 function delRow() {
     document.getElementById("houseHold").deleteRow(1);
-}	
+}
+
+function validateEmail() {
+    var email = document.getElementById("emailInput").value;
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+    return true;
+}
