@@ -79,12 +79,17 @@ function delRow() {
     document.getElementById("houseHold").deleteRow(1);
 }
 
-function validateEmail() {
-    var email = document.getElementById("emailInput").value;
-    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!regex.test(email)) {
-      alert("Please enter a valid email address");
-      return false;
-    }
-    return true;
+function validateEmail(emailId) {
+var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if(emailId.value.match(mailformat))
+        {
+            document.form1.text1.focus();
+            return true;
+        }
+    else
+        {
+            alert("Invalid email address.");
+            document.form1.text1.focus();
+            return false;
+        }
 }
