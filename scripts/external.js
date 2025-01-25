@@ -93,3 +93,15 @@ var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
             return false;
         }
 }
+
+function updateTime() {
+            const date = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const time = date.toLocaleTimeString();
+            const day = date.toLocaleDateString(undefined, options);
+            document.getElementById('time').innerHTML =
+                `Today is: ${day}, Current Time: ${time}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
