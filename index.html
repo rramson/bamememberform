@@ -103,11 +103,11 @@
 			<br><br>
 			<label for="MobileNumber"><b>Mobile Number:</b></label>
 			<br>
-			<input type="tel" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="3025551111" pattern="[0-9\-\+\(\)\s]+" maxLength="10" minLength="10" />
+			<input type="text" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 			<br>			
 			<label for="AltNumber"><b>Alternate Number:</b></label>
 			<br>
-			<input type="tel" id="AltNumber" name="Alternate&nbsp;Number" placeholder="3025551111" pattern="[0-9\-\+\(\)\s]+" maxLength="10" minLength="10" />
+			<input type="text" id="AltNumber" name="Alternate&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 			<br><br>
 
 			<label for="NumPublish">Can we publish your number in the Church's phone directory?</label><br>
@@ -154,7 +154,8 @@
 			
 			<label for="SpouseNumber"><b>Spouse Phone Number:</b></label>
 			<br>			
-			<input type="tel" id="SpouseNumber" name="Spouse&nbsp;Number" placeholder="3025551111" pattern="[0-9\-\+\(\)\s]+" maxLength="10" minLength="10" /><br><br>
+			<input type="text" id="SpouseNumber" name="Spouse&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+			<br><br>
 
 			<label for="WedAnniv"><b>Wedding Anniversary:</b></label><br>
 			<input type="date" name="Wedding&nbsp;Anniversary" id="WedAnniv" />
@@ -169,7 +170,8 @@
 			<input type="text" name="Emergency&nbsp;Name" id="EmergencyName=" value="" required /><br>
 			
 			<label for="EmergencyNumber">Phone Number:</label><br>			
-			<input type="tel" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" pattern="[0-9\-\+\(\)\s]+" maxLength="10" minLength="10" required /><br>
+			<input type="text" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" required />
+			<br>
 
 			<label for="EmergencyRelation">Relationship:</label><br>
 			<input type="text" name="Emergency&nbsp;Relationship" id="EmergencyRelation" value="" required />
@@ -206,7 +208,7 @@
 			<br>
 			<label for="WorkNumber">Work Phone Number:</label>
 			<br>		
-			<input type="tel" id="WorkNumber" name="Work&nbsp;Number" placeholder="3025551111" pattern="[0-9\-\+\(\)\s]+" maxLength="10" minLength="10" />
+			<input type="text" id="WorkNumber" name="Work&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 			<br>
 			<label for="Comments">Comments, any major skills, etc.:</label>
 			<br>
