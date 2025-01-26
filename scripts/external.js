@@ -11,75 +11,7 @@ function showOtherTxt(){
     }
 }
 
-function addRow() {
-
-    var houseTable = document.getElementById("houseHold");
-    
-    var row = houseTable.insertRow(1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    var cell5 = row.insertCell(4);
-    
-    var houseName = document.createElement("input");
-    houseName.type="text"
-    houseName.id="housename="
-    
-    var houseDOB = document.createElement("input");
-    houseDOB.type ="date"
-    houseDOB.id="houseDOB"
-    
-    var houseGender=document.createElement("input");
-    var houseGenderL=document.createElement("label");
-    houseGender.type="radio";
-    houseGender.name="GenderGroup";
-    houseGenderL.value="Male";
-    houseGenderL.textContent="Male";
-    
-    var houseGender2=document.createElement("input");
-    var houseGenderL2=document.createElement("label");
-    houseGender2.type="radio";
-    houseGender2.name="GenderGroup";
-    houseGenderL2.value="Female";
-    houseGenderL2.textContent="Female";
-    
-    var houseSave=document.createElement("input");
-    var houseSaveL=document.createElement("label");
-    houseSave.type="radio";
-    houseSave.name="SavedGroup";
-    houseSaveL.value="Yes";
-    houseSaveL.textContent="Yes";
-    
-    var houseSave2=document.createElement("input");
-    var houseSaveL2=document.createElement("label");
-    houseSave2.type="radio";
-    houseSave2.name="SavedGroup";
-    houseSaveL2.value="No";
-    houseSaveL2.textContent="No";
-    
-    var houseRel = document.createElement("input");
-    houseRel.type="text"
-    houseRel.id="housename="
-
-    cell1.appendChild(houseName);
-    cell2.appendChild(houseDOB);
-    cell3.appendChild(houseGender);
-    cell3.appendChild(houseGenderL);
-    cell3.appendChild(houseGender2);
-    cell3.appendChild(houseGenderL2);
-    cell4.appendChild(houseSave);
-    cell4.appendChild(houseSaveL);
-    cell4.appendChild(houseSave2);
-    cell4.appendChild(houseSaveL2);
-    cell5.appendChild(houseRel);
-}
-
-function delRow() {
-    document.getElementById("houseHold").deleteRow(1);
-}
-
-function validateEmail( emailId) {
+function validateEmail(emailId) {
 var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     if(emailId.value.match(mailformat))
         {
@@ -94,14 +26,33 @@ var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         }
 }
 
-function updateTime() {
-            const date = new Date();
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const time = date.toLocaleTimeString();
-            const day = date.toLocaleDateString(undefined, options);
-            document.getElementById('time').innerHTML =
-                `Today is: ${day}, Current Time: ${time}`;
-        }
+function validateEmail() {
+    var email = document.getElementById("emailInput").value;
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
+    }
+    return true;
+}
 
-        setInterval(updateTime, 1000);
-        updateTime();
+// phone number format: nnn-nnn-nnnn
+function format_phone(textfield){
+    var val=textfield.value;
+    val=val.replace(/[^\d]/g, ''); // remove all non-digits
+    if(val.length>10) // crop surplus characters
+    {
+        val=val.substring(0,10);
+    }
+
+    if(val.length>2) // first dash
+    {
+        val=val.replace(val.substring(0,3), val.substring(0,3)+'-');
+    }
+
+    if(val.length>6) // second dash
+    {
+        val=val.replace(val.substring(3,7), val.substring(3,7)+'-');
+    }
+    textfield.value=val;
+}
