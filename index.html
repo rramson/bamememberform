@@ -21,316 +21,359 @@
 	<input type="hidden" name="_next" value="https://rramson.github.io/bamememberform/thanks.html" />
 
 		<div class="container-fluid">
-		<p id="rcorner2label">Tell Us About Yourself</p>
-		<p id="rcorners2">		
-			<label for="ChristianStatus"><b>Select your status: *</b></label>
-			<br>
-		
-			<input type="radio" id="NewMember" name="Christian&nbsp;Status" value="New&nbsp;Member" required />
-			<label for="NewMember">New Member <i>(already baptized)</i></label>
-			<br>
-		
-			<input type="radio" id="NewConvert" name="Christian&nbsp;Status" value="New&nbsp;Convert" required />
-			<label for="NewConvert">New Convert <i>(never been baptized)</i></label>
-			<br>
-		
-			<input type="radio" id="MethodistTransfer" name="Christian&nbsp;Status" value="Methodist&nbsp;Transfer" required />
-			<label for="MethodistTransfer">Methodist Transfer <i>(with certificate of transfer)</i></label>
-			<br>
-		
-			<input type="radio" id="WatchCare" name="Christian&nbsp;Status" value="Watch&nbsp;Care" required />
-			<label for="WatchCare">Watch Care</label>
-		</p>
-		<br>
-		
-		<p id="rcorner2label">Tell Us Your Name</p>
-		<p id="rcorners2">		
-			<label for="memberTitle"><b>Select your title: *</b></label>
-			<br>
-		
-			<input type="radio" name="Member&nbsp;Title" id="RV" value="RV" required />
-			<label for="REV">Reverend</label>&Tab;
-		
-			<input type="radio" name="Member&nbsp;Title" id="EV" value="EV" required />
-			<label for="EV">Evangelist</label>&Tab;
+			<div id="rcorner2label" class="row">
+				Tell Us About Yourself
+			</div>
 
-			<input type="radio" name="Member&nbsp;Title" id="DR" value="DR" required />
-			<label for="DR">Doctor (MD, PhD, etc.)</label>
-			<br>
-
-			<input type="radio" name="Member&nbsp;Title" id="MR" value="MR" required />
-			<label for="MR">Mr.</label>&Tab;
-		
-			<input type="radio" name="Member&nbsp;Title" id="MRS" value="MRS" required />
-			<label for="MRS">Mrs.</label>&Tab;
-		
-			<input type="radio" name="Member&nbsp;Title" id="MS" value="MS" required />
-			<label for="MS">Ms.</label>
-			<br>
-			<br>
+			<div id="rcorners2" class="col-sm">		
+				<label for="ChristianStatus"><b>Select your status: *</b></label>
+				<br />
 				
-			<label for="FirstName=">First Name <strong>*</strong> </label><br>
-			<input type="text" name="First&nbsp;Name" id="FirstName=" value="" required minlength="1" maxlength="29" size="30" /><br>
-		
-			<label for="MiddleName=">Middle Name <strong>*</strong></label><br>
-			<input type="text" name="Middle&nbsp;Name" id="MiddleName=" value="" required minlength="1" maxlength="25" size="30" /><br>
-		
-			<label for="LastName=">Last Name <strong>*</strong></label><br>
-			<input type="text" name="Last&nbsp;Name" id="LastName=" value="" required minlength="1" maxlength="29" size="30" /><br>
-		</p>
-		<br>
-		
-		<p id="rcorner2label">Tell Us Where You Reside</p>
-		<p id="rcorners2">
-			<label for="StreetAddr">Street Address</label><br>
-			<input type="text" name="Street&nbsp;Address" id="StreetAddr" value=""><br>
-			
-			<label for="AptNum">Apt Number</label><br>
-			<input type="text" name="Apt&nbsp;Number" id="AptNum" value=""><br>
-			
-			<label for="City">City</label><br>
-			<input type="text" name="City" id="City" value=""><br>
-			
-			<label for="State">State</label><br>
-			<input type="text" name="State" id="State" value="" placeholder="DE" minlength="2" maxlength="2" /><br>
-			
-			<label for="ZipCode">Zip Code</label><br>
-			<input type="text" name="Zip&nbsp;Code" id="ZipCode" value="" minlength="5" maxlength="5" />
-		</p><br>
-		
-		<p id="rcorner2label">How Can We Contact You?</p>
-		<p id="rcorners2">		
-			<label for="MemberEmail"><b>Email:(name@example.com)</b></label>
-			<br>
-			<input type='text' name='email' />
-			<br><br>
-			<label for="MobileNumber"><b>Mobile Number:</b></label>
-			<br>
-			<input type="text" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
-			<br>			
-			<label for="AltNumber"><b>Alternate Number:</b></label>
-			<br>
-			<input type="text" id="AltNumber" name="Alternate&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
-			<br><br>
-
-			<label for="NumPublish">Can we publish your number in the Church's phone directory?</label><br>
-			<input type="radio" name="Can&nbsp;Publish" value="Yes">
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Can&nbsp;Publish" value="No">
-			<label for="No">No</label><br><br>
-			
-			<label for="ReceiveEmail">Would you like to receive email information regarding church activities?</label><br>
-			<input type="radio" name="Receive&nbsp;Email" value="Yes">
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Receive&nbsp;Email" value="No">
-			<label for="No">No</label><br><br>
+				<input type="radio" id="NewMember" name="Christian&nbsp;Status" value="New&nbsp;Member" required />
+				<label for="NewMember">New Member <i>(already baptized)</i></label>
+				<br />
 				
-			<label for="ReceiveText">Would you like to receive text messages regarding church activities?</label><br>
-			<input type="radio" name="Receive&nbsp;Text" value="Yes">
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Receive&nbsp;Text" value="No">
-			<label for="No">No</label><br><br>		
-		</p><br>
-		
-		
-		<p id="rcorner2label">Please Provide Some Brief Information</p>
-		<p id="rcorners2">
-			
-			<label for="MemberDOB"><b>Birth Date: *</b></label><br>
-			<input type="date" name="Member&nbsp;DOB" id="MemberDOB" required />
-			<br><br>
-		
-			<label for="MaritalStatus"><b>Marital Status:</b></label>
-			<br>
-			<select name="Marital&nbsp;Status" id="MaritalStatus" required>
-				<option value="Single">Single</option>
-				<option value="Married">Married</option>
-				<option value="Widow">Widow</option>
-				<option value="Divorced">Divorced</option>
-			</select>
-			<br><br>
-		
-			<label for="SpouseName="><b>Spouse Name:</b></label>
-			<br>
-			<input type="text" name="Spouse&nbsp;Name" id="SpouseName=" value="" />
-			<br>
-			
-			<label for="SpouseNumber"><b>Spouse Phone Number:</b></label>
-			<br>			
-			<input type="text" id="SpouseNumber" name="Spouse&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
-			<br><br>
+				<input type="radio" id="NewConvert" name="Christian&nbsp;Status" value="New&nbsp;Convert" required />
+				<label for="NewConvert">New Convert <i>(never been baptized)</i></label>
+				<br />
+				
+				<input type="radio" id="MethodistTransfer" name="Christian&nbsp;Status" value="Methodist&nbsp;Transfer" required />
+				<label for="MethodistTransfer">Methodist Transfer <i>(with certificate of transfer)</i></label>
+				<br />
+				
+				<input type="radio" id="WatchCare" name="Christian&nbsp;Status" value="Watch&nbsp;Care" required />
+				<label for="WatchCare">Watch Care</label>
+			</div>
+			<br />
+				
+			<div id="rcorner2label" class="row">
+				Tell Us Your Name
+			</div>
 
-			<label for="WedAnniv"><b>Wedding Anniversary:</b></label><br>
-			<input type="date" name="Wedding&nbsp;Anniversary" id="WedAnniv" />
-		</p><br>
-	
-		
-		<p id="rcorner2label">Emergency Contact Information</p>
-		<p id="rcorners2">
-			<b>Who can we contact in case of an emergency? *</b>
-			<br><br>
-			<label for="EmergencyName=">Full Name: <strong>*</strong></label><br>
-			<input type="text" name="Emergency&nbsp;Name" id="EmergencyName=" value="" required /><br>
-			
-			<label for="EmergencyNumber">Phone Number: <strong>*</strong></label><br>			
-			<input type="text" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" required />
-			<br>
+			<div id="rcorners2" class="col-sm">		
+				<label for="memberTitle"><b>Select your title: *</b></label>
+				<br />
+				
+				<input type="radio" name="Member&nbsp;Title" id="RV" value="RV" required />
+				<label for="REV">Reverend</label>&Tab;
+				
+				<input type="radio" name="Member&nbsp;Title" id="EV" value="EV" required />
+				<label for="EV">Evangelist</label>&Tab;
 
-			<label for="EmergencyRelation">Relationship: <strong>*</strong></label><br>
-			<input type="text" name="Emergency&nbsp;Relationship" id="EmergencyRelation" value="" required />
-		</p>
-		<br>
-		
-		<p id="rcorner2label">Optional Information</p>
-		<p id="rcorners2">
-			<label for="PrevChurch">Previous Church:</label>
-			<br>
-			<input type="text" name="Previous&nbsp;Church" id="PrevChurch" value="" />
-			<br>
-			<label for="PrevChurchAddr">Previous Church Location (City & State):</label>
-			<br>
-			<input type="text" name="Previous&nbsp;Church&nbsp;Address" id="PrevChurchAddr" value="" />
-			<br>
-			<br>
-		
-			<label for="WorkStatus">Are you employed?</label>
-			<br>
-			<input type="radio" name="Employed" value="Yes" />
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Employed" value="No" />
-			<label for="No">No</label>
-			<br>
-			<br>
-			<label for="WorkPlace">Place of Employment:</label>
-			<br>
-			<input type="text" name="Work&nbsp;Place" id="WorkPlace" value="" />
-			<br>
-			<label for="JobTitle">Job Title:</label>
-			<br>
-			<input type="text" name="Job&nbsp;Title" id="JobTitle" value="" />
-			<br>
-			<label for="WorkNumber">Work Phone Number:</label>
-			<br>		
-			<input type="text" id="WorkNumber" name="Work&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
-			<br>
-			<label for="Comments">Comments, any major skills, etc.:</label>
-			<br>
-			<input type="text" name="Comments" id="Comments" value="" />
-		</p>
-		<br>
-		
-		<p id="rcorner2label">Additional Household Members</p>
-		<p id="rcorners2">
-			<label for="AddFamName1">Full Name:</label>
-			<br>	
-			<input type="text" name="Additional&nbsp;Family&nbsp;Name1" id="AddFamName1" value="" />
-			<br>
-			
-			<label for="AddFamDOB1">Date of Birth</label>
-			<input type="date" name="Additional&nbsp;Family&nbsp;DOB1" id="AddFamDOB1" value="" />
-			<br><br>
+				<input type="radio" name="Member&nbsp;Title" id="DR" value="DR" required />
+				<label for="DR">Doctor (MD, PhD, etc.)</label>
+				<br />
 
-			<label for="AddFamGender1">Gender</label>
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender1" id="AddFamGender1" value="Male" />
-			<label for="Male">Male</label>&Tab;
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender1" id="AddFamGender1" value="Female" />
-			<label for="Female">Female</label>
-			<br><br>
+				<input type="radio" name="Member&nbsp;Title" id="MR" value="MR" required />
+				<label for="MR">Mr.</label>&Tab;
+				
+				<input type="radio" name="Member&nbsp;Title" id="MRS" value="MRS" required />
+				<label for="MRS">Mrs.</label>&Tab;
+				
+				<input type="radio" name="Member&nbsp;Title" id="MS" value="MS" required />
+				<label for="MS">Ms.</label>
+				<br />
+				<br />
+						
+				<label for="FirstName=">First Name <strong>*</strong> </label><br />
+				<input type="text" name="First&nbsp;Name" id="FirstName=" value="" required minlength="1" maxlength="29" size="30" /><br />
+				
+				<label for="MiddleName=">Middle Name <strong>*</strong></label><br />
+				<input type="text" name="Middle&nbsp;Name" id="MiddleName=" value="" required minlength="1" maxlength="25" size="30" /><br />
+				
+				<label for="LastName=">Last Name <strong>*</strong></label><br />
+				<input type="text" name="Last&nbsp;Name" id="LastName=" value="" required minlength="1" maxlength="29" size="30" /><br />
+			</div>
+			<br />
+				
+			<div id="rcorner2label" class="row">
+				Tell Us Where You Reside
+			</div>
 
-			<label for="AddFamSaved1">Saved?</label>
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" id="AddFamSaved1" value="Yes" />
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" id="AddFamSaved1" value="No" />
-			<label for="No">No</label>
-			<br><br>
+			<div id="rcorners2" class="col-sm">
+				<label for="StreetAddr">Street Address</label><br />
+				<input type="text" name="Street&nbsp;Address" id="StreetAddr" value=""><br />
+					
+				<label for="AptNum">Apt Number</label><br />
+				<input type="text" name="Apt&nbsp;Number" id="AptNum" value=""><br />
+					
+				<label for="City">City</label><br />
+				<input type="text" name="City" id="City" value=""><br />
+					
+				<label for="State">State</label><br />
+				<input type="text" name="State" id="State" value="" placeholder="DE" minlength="2" maxlength="2" /><br />
+					
+				<label for="ZipCode">Zip Code</label><br />
+				<input type="text" name="Zip&nbsp;Code" id="ZipCode" value="" minlength="5" maxlength="5" />
+			</div>
+			<br />
+				
+			<div id="rcorner2label" class="row">
+				How Can We Contact You?
+			</div>
 
-			<label for="AddFamRelated1">Relationship to You?</label>
-			<br>
-			<input type="text" name="How&nbsp;Related1" id="AddFamRelated1" value="" />
-			<br><br>
-		</p>
-		<br>
-		<p id="rcorner2label">Additional Household Members</p>
-		<p id="rcorners2">
-			<label for="AddFamName2">Full Name:</label>
-			<br>	
-			<input type="text" name="Additional&nbsp;Family&nbsp;Name2" id="AddFamName2" value="" />
-			<br>
-			
-			<label for="AddFamDOB2">Date of Birth</label>
-			<input type="date" name="Additional&nbsp;Family&nbsp;DOB2" id="AddFamDOB2" value="" />
-			<br><br>
+			<div id="rcorners2" class="col-sm">		
+				<label for="MemberEmail"><b>Email:(name@example.com)</b></label>
+				<br />
+				<input type='text' name='email' />
+				<br /><br />
+				<label for="MobileNumber"><b>Mobile Number:</b></label>
+				<br />
+				<input type="text" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<br />			
+				<label for="AltNumber"><b>Alternate Number:</b></label>
+				<br />
+				<input type="text" id="AltNumber" name="Alternate&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<br /><br />
 
-			<label for="AddFamGender2">Gender</label>
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender2" id="AddFamGender2" value="Male" />
-			<label for="Male">Male</label>&Tab;
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender2" id="AddFamGender2" value="Female"/>
-			<label for="Female">Female</label>
-			<br><br>
+				<label for="NumPublish">Can we publish your number in the Church's phone directory?</label><br />
+				<input type="radio" name="Can&nbsp;Publish" value="Yes">
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Can&nbsp;Publish" value="No">
+				<label for="No">No</label><br /><br />
+					
+				<label for="ReceiveEmail">Would you like to receive email information regarding church activities?</label><br />
+				<input type="radio" name="Receive&nbsp;Email" value="Yes">
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Receive&nbsp;Email" value="No">
+				<label for="No">No</label><br /><br />
+					
+				<label for="ReceiveText">Would you like to receive text messages regarding church activities?</label><br />
+				<input type="radio" name="Receive&nbsp;Text" value="Yes">
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Receive&nbsp;Text" value="No">
+				<label for="No">No</label><br /><br />		
+			</div>
+			<br />
+				
+				
+			<div id="rcorner2label" class="row">
+				Please Provide Some Brief Information
+			</div>
+				
+				
+			<div id="rcorners2" class="col-sm">					
+				<label for="MemberDOB"><b>Birth Date: *</b></label><br />
+				<input type="date" name="Member&nbsp;DOB" id="MemberDOB" required />
+				<br /><br />
+				
+				<label for="MaritalStatus"><b>Marital Status:</b></label>
+				<br />
+				<select name="Marital&nbsp;Status" id="MaritalStatus" required>
+					<option value="Single">Single</option>
+					<option value="Married">Married</option>
+					<option value="Widow">Widow</option>
+					<option value="Divorced">Divorced</option>
+				</select>
+				<br /><br />
+				
+				<label for="SpouseName="><b>Spouse Name:</b></label>
+				<br />
+				<input type="text" name="Spouse&nbsp;Name" id="SpouseName=" value="" />
+				<br />
+					
+				<label for="SpouseNumber"><b>Spouse Phone Number:</b></label>
+				<br />			
+				<input type="text" id="SpouseNumber" name="Spouse&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<br /><br />
 
-			<label for="AddFamSaved2">Saved?</label>
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" id="AddFamSaved2" value="Yes" />
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" id="AddFamSaved2" value="No" />
-			<label for="No">No</label>
-			<br><br>
+				<label for="WedAnniv"><b>Wedding Anniversary:</b></label><br />
+				<input type="date" name="Wedding&nbsp;Anniversary" id="WedAnniv" />
+			</div>
+			<br />		
+				
+			<div id="rcorner2label" class="row">
+				Emergency Contact Information
+			</div>
+								
+			<div id="rcorners2" class="col-sm">
+				<b>Who can we contact in case of an emergency? *</b>
+				<br /><br />
+				<label for="EmergencyName=">Full Name: <strong>*</strong></label><br />
+				<input type="text" name="Emergency&nbsp;Name" id="EmergencyName=" value="" required /><br />
+					
+				<label for="EmergencyNumber">Phone Number: <strong>*</strong></label><br />			
+				<input type="text" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" required />
+				<br />
 
-			<label for="AddFamRelated2">Relationship to You?</label>
-			<br>
-			<input type="text" name="How&nbsp;Related2" id="AddFamRelated2" value="" />
-			<br><br>
-		</p>
-		<br>
-		<p id="rcorner2label">Additional Household Members</p>
-		<p id="rcorners2">
-			<label for="AddFamName3">Full Name:</label>
-			<br>	
-			<input type="text" name="Additional&nbsp;Family&nbsp;Name3" id="AddFamName3" value="" />
-			<br>
-			
-			<label for="AddFamDOB3">Date of Birth</label>
-			<input type="date" name="Additional&nbsp;Family&nbsp;DOB3" id="AddFamDOB3" value="" />
-			<br><br>
+				<label for="EmergencyRelation">Relationship: <strong>*</strong></label><br />
+				<input type="text" name="Emergency&nbsp;Relationship" id="EmergencyRelation" value="" required />
+			</div>
+			<br />
+				
+			<div id="rcorner2label" class="row">
+				Optional Information
+			</div>
+				
+			<div id="rcorners2" class="col-sm">
+				<label for="PrevChurch">Previous Church:</label>
+				<br />
+				<input type="text" name="Previous&nbsp;Church" id="PrevChurch" value="" />
+				<br />
+				<label for="PrevChurchAddr">Previous Church Location (City & State):</label>
+				<br />
+				<input type="text" name="Previous&nbsp;Church&nbsp;Address" id="PrevChurchAddr" value="" />
+				<br />
+				<br />
+				
+				<label for="WorkStatus">Are you employed?</label>
+				<br />
+				<input type="radio" name="Employed" value="Yes" />
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Employed" value="No" />
+				<label for="No">No</label>
+				<br />
+				<br />
+				
+				<label for="WorkPlace">Place of Employment:</label>
+				<br />
+				<input type="text" name="Work&nbsp;Place" id="WorkPlace" value="" />
+				<br />
+				<label for="JobTitle">Job Title:</label>
+				<br />
+				<input type="text" name="Job&nbsp;Title" id="JobTitle" value="" />
+				<br />
+				<label for="WorkNumber">Work Phone Number:</label>
+				<br />		
+				<input type="text" id="WorkNumber" name="Work&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<br />
+				<label for="Comments">Comments, any major skills, etc.:</label>
+				<br />
+				<input type="text" name="Comments" id="Comments" value="" />
+			</div>
+			<br />
+				
+			<div id="rcorner2label" class="row">
+				Additional Household Members
+			</div>
 
-			<label for="AddFamGender3">Gender</label>
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender3" id="AddFamGender3" value="Male" />
-			<label for="Male">Male</label>&Tab;
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Gender3" id="AddFamGender3" value="Female" />
-			<label for="Female">Female</label>
-			<br><br>
+			<div id="rcorners2" class="col-sm">
+				<label for="AddFamName1">Full Name:</label>
+				<br />	
+				<input type="text" name="Additional&nbsp;Family&nbsp;Name1" id="AddFamName1" value="" />
+				<br />
+					
+				<label for="AddFamDOB1">Date of Birth</label>
+				<input type="date" name="Additional&nbsp;Family&nbsp;DOB1" id="AddFamDOB1" value="" />
+				<br /><br />
 
-			<label for="AddFamSaved3">Saved?</label>
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" id="AddFamSaved3" value="Yes" />
-			<label for="Yes">Yes</label>&Tab;
-			<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" id="AddFamSaved3" value="No" />
-			<label for="No">No</label>
-			<br><br>
+				<label for="AddFamGender1">Gender</label>
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender1" id="AddFamGender1" value="Male" />
+				<label for="Male">Male</label>&Tab;
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender1" id="AddFamGender1" value="Female" />
+				<label for="Female">Female</label>
+				<br /><br />
 
-			<label for="AddFamRelated3">Relationship to You?</label>
-			<br>
-			<input type="text" name="How&nbsp;Related3" id="AddFamRelated3" value="" />
-			<br><br>
-		</p>
-		<br>
-		<p id="rcorner2label">Social Media Acknowledgement</p>
-		<p id="rcorners2">
-			<label for="SMAck" class="wrap">				
-				By clicking the submit button below, you hereby authorize and consent to the use of your image by 
-				Bethel AME Church in Wilmington, DE to be posted publicly on Bethel's social media platforms. 
-				<br><br>
-				This includes the church's YouTube channel, Facebook, X (formely Twitter), and Instagram accounts. 
-				<br><br>
-				It also includes Bethel AME Church's social media accounts, internal and external Bethel electronics, 
-				print publication and websites.
-				<br><br>
-				This authorization is irrevocable, and waives all rights, claims, and demands against the AME 
-				Church in connection with or arising out of the reproduction, publication or other use of 
-				photograph or other physical images of you.
-			</label>
-			<br>
-		</p>
-	<input type="submit" value="Submit" onclick="validateEmail(document.form1.Member&nbspEmail.value)" />
+				<label for="AddFamSaved1">Saved?</label>
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" id="AddFamSaved1" value="Yes" />
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" id="AddFamSaved1" value="No" />
+				<label for="No">No</label>
+				<br /><br />
+
+				<label for="AddFamRelated1">Relationship to You?</label>
+				<br />
+				<input type="text" name="How&nbsp;Related1" id="AddFamRelated1" value="" />
+				<br /><br />
+			</div>
+			<br />
+
+			<div id="rcorner2label" class="row">
+				Additional Household Members
+			</div>
+
+			<div id="rcorners2" class="col-sm">
+				<label for="AddFamName2">Full Name:</label>
+				<br />	
+				<input type="text" name="Additional&nbsp;Family&nbsp;Name2" id="AddFamName2" value="" />
+				<br />
+					
+				<label for="AddFamDOB2">Date of Birth</label>
+				<input type="date" name="Additional&nbsp;Family&nbsp;DOB2" id="AddFamDOB2" value="" />
+				<br /><br />
+
+				<label for="AddFamGender2">Gender</label>
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender2" id="AddFamGender2" value="Male" />
+				<label for="Male">Male</label>&Tab;
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender2" id="AddFamGender2" value="Female"/>
+				<label for="Female">Female</label>
+				<br /><br />
+
+				<label for="AddFamSaved2">Saved?</label>
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" id="AddFamSaved2" value="Yes" />
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" id="AddFamSaved2" value="No" />
+				<label for="No">No</label>
+				<br /><br />
+
+				<label for="AddFamRelated2">Relationship to You?</label>
+				<br />
+				<input type="text" name="How&nbsp;Related2" id="AddFamRelated2" value="" />
+				<br /><br />
+			</div>
+			<br />
+
+			<div id="rcorner2label" class="row">
+				Additional Household Members
+			</div>
+
+			<div id="rcorners2" class="col-sm">
+				<label for="AddFamName3">Full Name:</label>
+				<br />	
+				<input type="text" name="Additional&nbsp;Family&nbsp;Name3" id="AddFamName3" value="" />
+				<br />
+					
+				<label for="AddFamDOB3">Date of Birth</label>
+				<input type="date" name="Additional&nbsp;Family&nbsp;DOB3" id="AddFamDOB3" value="" />
+				<br /><br />
+
+				<label for="AddFamGender3">Gender</label>
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender3" id="AddFamGender3" value="Male" />
+				<label for="Male">Male</label>&Tab;
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender3" id="AddFamGender3" value="Female" />
+				<label for="Female">Female</label>
+				<br /><br />
+
+				<label for="AddFamSaved3">Saved?</label>
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" id="AddFamSaved3" value="Yes" />
+				<label for="Yes">Yes</label>&Tab;
+				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" id="AddFamSaved3" value="No" />
+				<label for="No">No</label>
+				<br /><br />
+
+				<label for="AddFamRelated3">Relationship to You?</label>
+				<br />
+				<input type="text" name="How&nbsp;Related3" id="AddFamRelated3" value="" />
+				<br /><br />
+			</div>
+			<br />
+				
+			<div id="rcorner2label" class="row">
+				Social Media Acknowledgement
+			</div>
+
+			<div id="rcorners2" class="col-sm">
+				<label for="SMAck" class="wrap">				
+					By clicking the submit button below, you hereby authorize and consent to the use of your image by 
+					Bethel AME Church in Wilmington, DE to be posted publicly on Bethel's social media platforms. 
+					<br /><br />
+					This includes the church's YouTube channel, Facebook, X (formely Twitter), and Instagram accounts. 
+					<br /><br />
+					It also includes Bethel AME Church's social media accounts, internal and external Bethel electronics, 
+					print publication and websites.
+					<br /><br />
+					This authorization is irrevocable, and waives all rights, claims, and demands against the AME 
+					Church in connection with or arising out of the reproduction, publication or other use of 
+					photograph or other physical images of you.
+				</label>
+				<br />
+			</div>
+
+			<input type="submit" value="Submit" onclick="validateEmail(document.form1.Member&nbspEmail.value)" />
+		</div>
 	</form>
-	</div>
+
+	<!-- Bootstrap JS Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
