@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,58 +23,59 @@
 		<div class="container-fluid">
 		<p id="rcorner2label">Tell Us About Yourself</p>
 		<p id="rcorners2">		
-			<label for="ChristianStatus"><b>Select your status:</b></label>
+			<label for="ChristianStatus"><b>Select your status: *</b></label>
 			<br>
 		
 			<input type="radio" id="NewMember" name="Christian&nbsp;Status" value="New&nbsp;Member" required />
 			<label for="NewMember">New Member <i>(already baptized)</i></label>
 			<br>
 		
-			<input type="radio" id="NewConvert" name="Christian&nbsp;Status" value="New&nbsp;Convert" />
+			<input type="radio" id="NewConvert" name="Christian&nbsp;Status" value="New&nbsp;Convert" required />
 			<label for="NewConvert">New Convert <i>(never been baptized)</i></label>
 			<br>
 		
-			<input type="radio" id="MethodistTransfer" name="Christian&nbsp;Status" value="Methodist&nbsp;Transfer" />
+			<input type="radio" id="MethodistTransfer" name="Christian&nbsp;Status" value="Methodist&nbsp;Transfer" required />
 			<label for="MethodistTransfer">Methodist Transfer <i>(with certificate of transfer)</i></label>
 			<br>
 		
-			<input type="radio" id="WatchCare" name="Christian&nbsp;Status" value="Watch&nbsp;Care" />
+			<input type="radio" id="WatchCare" name="Christian&nbsp;Status" value="Watch&nbsp;Care" required />
 			<label for="WatchCare">Watch Care</label>
 		</p>
 		<br>
 		
 		<p id="rcorner2label">Tell Us Your Name</p>
 		<p id="rcorners2">		
-			<label for="memberTitle"><b>Select your title:</b></label><br>
+			<label for="memberTitle"><b>Select your title: *</b></label>
+			<br>
 		
 			<input type="radio" name="Member&nbsp;Title" id="RV" value="RV" required />
 			<label for="REV">Reverend</label>&Tab;
 		
-			<input type="radio" name="Member&nbsp;Title" id="EV" value="EV" />
+			<input type="radio" name="Member&nbsp;Title" id="EV" value="EV" required />
 			<label for="EV">Evangelist</label>&Tab;
 
-			<input type="radio" name="Member&nbsp;Title" id="DR" value="DR" />
+			<input type="radio" name="Member&nbsp;Title" id="DR" value="DR" required />
 			<label for="DR">Doctor (MD, PhD, etc.)</label>
 			<br>
 
-			<input type="radio" name="Member&nbsp;Title" id="MR" value="MR" />
+			<input type="radio" name="Member&nbsp;Title" id="MR" value="MR" required />
 			<label for="MR">Mr.</label>&Tab;
 		
-			<input type="radio" name="Member&nbsp;Title" id="MRS" value="MRS" />
+			<input type="radio" name="Member&nbsp;Title" id="MRS" value="MRS" required />
 			<label for="MRS">Mrs.</label>&Tab;
 		
-			<input type="radio" name="Member&nbsp;Title" id="MS" value="MS" />
+			<input type="radio" name="Member&nbsp;Title" id="MS" value="MS" required />
 			<label for="MS">Ms.</label>
 			<br>
 			<br>
 				
-			<label for="FirstName=">First Name</label><br>
+			<label for="FirstName=">First Name <strong>*</strong> </label><br>
 			<input type="text" name="First&nbsp;Name" id="FirstName=" value="" required minlength="1" maxlength="29" size="30" /><br>
 		
-			<label for="MiddleName=">Middle Name</label><br>
+			<label for="MiddleName=">Middle Name <strong>*</strong></label><br>
 			<input type="text" name="Middle&nbsp;Name" id="MiddleName=" value="" required minlength="1" maxlength="25" size="30" /><br>
 		
-			<label for="LastName=">Last Name</label><br>
+			<label for="LastName=">Last Name <strong>*</strong></label><br>
 			<input type="text" name="Last&nbsp;Name" id="LastName=" value="" required minlength="1" maxlength="29" size="30" /><br>
 		</p>
 		<br>
@@ -134,7 +136,7 @@
 		<p id="rcorner2label">Please Provide Some Brief Information</p>
 		<p id="rcorners2">
 			
-			<label for="MemberDOB"><b>Birth Date:</b></label><br>
+			<label for="MemberDOB"><b>Birth Date: *</b></label><br>
 			<input type="date" name="Member&nbsp;DOB" id="MemberDOB" required />
 			<br><br>
 		
@@ -165,16 +167,16 @@
 		
 		<p id="rcorner2label">Emergency Contact Information</p>
 		<p id="rcorners2">
-			<b>Who can we contact in case of an emergency?</b>
+			<b>Who can we contact in case of an emergency? *</b>
 			<br><br>
-			<label for="EmergencyName=">Full Name:</label><br>
+			<label for="EmergencyName=">Full Name: <strong>*</strong></label><br>
 			<input type="text" name="Emergency&nbsp;Name" id="EmergencyName=" value="" required /><br>
 			
-			<label for="EmergencyNumber">Phone Number:</label><br>			
+			<label for="EmergencyNumber">Phone Number: <strong>*</strong></label><br>			
 			<input type="text" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" required />
 			<br>
 
-			<label for="EmergencyRelation">Relationship:</label><br>
+			<label for="EmergencyRelation">Relationship: <strong>*</strong></label><br>
 			<input type="text" name="Emergency&nbsp;Relationship" id="EmergencyRelation" value="" required />
 		</p>
 		<br>
@@ -327,7 +329,7 @@
 			</label>
 			<br>
 		</p>
-	<input type="submit" value="Submit" onclick="validateEmail(document.form1.[“Member Email”].value)" />
+	<input type="submit" value="Submit" onclick="validateEmail(document.form1.Member&nbspEmail.value)" />
 	</form>
 	</div>
 </body>
