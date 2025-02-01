@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Bethel AME Church Membership Form</title>
 	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bethel_membership_form.css" />
 	<script type="text/javascript" src="scripts/external.js"></script>
 </head>
@@ -25,24 +24,24 @@
 				Tell Us About Yourself
 			</div>
 
-			<div id="rcorners2" class="col-sm">		
-				<label for="ChristianStatus"><b>Select your status: *</b></label>
+			<div id="rcorners2" class="form-check col-sm">		
+				<label class="form-check-label" for="ChristianStatus"><b>Select your status: *</b></label>
 				<br />
 				
-				<input type="radio" id="NewMember" name="Christian&nbsp;Status" value="New&nbsp;Member" required />
-				<label for="NewMember">New Member <i>(already baptized)</i></label>
+				<input type="radio" class="form-check-input" id="NewMember" name="Christian&nbsp;Status" value="New&nbsp;Member" required />
+				<label class="form-check-label" for="NewMember">New Member <i>(already baptized)</i></label>
 				<br />
 				
-				<input type="radio" id="NewConvert" name="Christian&nbsp;Status" value="New&nbsp;Convert" required />
-				<label for="NewConvert">New Convert <i>(never been baptized)</i></label>
+				<input type="radio" class="form-check-input" id="NewConvert" name="Christian&nbsp;Status" value="New&nbsp;Convert" required />
+				<label class="form-check-label" for="NewConvert">New Convert <i>(never been baptized)</i></label>
 				<br />
 				
-				<input type="radio" id="MethodistTransfer" name="Christian&nbsp;Status" value="Methodist&nbsp;Transfer" required />
-				<label for="MethodistTransfer">Methodist Transfer <i>(with certificate of transfer)</i></label>
+				<input type="radio" class="form-check-input" id="MethodistTransfer" name="Christian&nbsp;Status" value="Methodist&nbsp;Transfer" required />
+				<label class="form-check-label" for="MethodistTransfer">Methodist Transfer <i>(with certificate of transfer)</i></label>
 				<br />
 				
-				<input type="radio" id="WatchCare" name="Christian&nbsp;Status" value="Watch&nbsp;Care" required />
-				<label for="WatchCare">Watch Care</label>
+				<input type="radio" class="form-check-input" id="WatchCare" name="Christian&nbsp;Status" value="Watch&nbsp;Care" required />
+				<label class="form-check-label" for="WatchCare">Watch Care</label>
 			</div>
 			<br />
 				
@@ -50,39 +49,39 @@
 				Tell Us Your Name
 			</div>
 
-			<div id="rcorners2" class="col-sm">		
-				<label for="memberTitle"><b>Select your title: *</b></label>
+			<div id="rcorners2" class="form-check col-sm">		
+				<label class="form-check-label" for="memberTitle"><b>Select your title: *</b></label>
 				<br />
 				
-				<input type="radio" name="Member&nbsp;Title" id="RV" value="RV" required />
-				<label for="REV">Reverend</label>&Tab;
+				<input type="radio" class="form-check-input" id="RV" name="Member&nbsp;Title" value="RV" required />
+				<label class="form-check-label" for="REV">Reverend</label>&Tab;
 				
-				<input type="radio" name="Member&nbsp;Title" id="EV" value="EV" required />
-				<label for="EV">Evangelist</label>&Tab;
+				<input type="radio" class="form-check-input" id="EV" name="Member&nbsp;Title" value="EV" required />
+				<label class="form-check-label" for="EV">Evangelist</label>&Tab;
 
-				<input type="radio" name="Member&nbsp;Title" id="DR" value="DR" required />
-				<label for="DR">Doctor (MD, PhD, etc.)</label>
+				<input type="radio" class="form-check-input" id="DR" name="Member&nbsp;Title" value="DR" required />
+				<label class="form-check-label" for="DR">Doctor (MD, PhD, etc.)</label>
 				<br />
 
-				<input type="radio" name="Member&nbsp;Title" id="MR" value="MR" required />
-				<label for="MR">Mr.</label>&Tab;
+				<input type="radio" class="form-check-input" id="MR" name="Member&nbsp;Title" value="MR" required />
+				<label class="form-check-label" for="MR">Mr.</label>&Tab;
 				
-				<input type="radio" name="Member&nbsp;Title" id="MRS" value="MRS" required />
-				<label for="MRS">Mrs.</label>&Tab;
+				<input type="radio" class="form-check-input" id="MRS" name="Member&nbsp;Title" value="MRS" required />
+				<label class="form-check-label" for="MRS">Mrs.</label>&Tab;
 				
-				<input type="radio" name="Member&nbsp;Title" id="MS" value="MS" required />
-				<label for="MS">Ms.</label>
+				<input type="radio" class="form-check-input" id="MS" name="Member&nbsp;Title" value="MS" required />
+				<label class="form-check-label" for="MS">Ms.</label>
 				<br />
 				<br />
 						
-				<label for="FirstName=">First Name <strong>*</strong> </label><br />
-				<input type="text" name="First&nbsp;Name" id="FirstName=" value="" required minlength="1" maxlength="29" size="30" /><br />
+				<label class="form-label" for="FirstName=">First Name <strong>*</strong> </label><br />
+				<input type="text" class="form-control" id="FirstName=" name="First&nbsp;Name" value="" required minlength="1" maxlength="29" size="30" /><br />
 				
-				<label for="MiddleName=">Middle Name <strong>*</strong></label><br />
-				<input type="text" name="Middle&nbsp;Name" id="MiddleName=" value="" required minlength="1" maxlength="25" size="30" /><br />
+				<label class="form-label" for="MiddleName=">Middle Name <strong>*</strong></label><br />
+				<input type="text" class="form-control" id="MiddleName=" name="Middle&nbsp;Name" value="" required minlength="1" maxlength="25" size="30" /><br />
 				
-				<label for="LastName=">Last Name <strong>*</strong></label><br />
-				<input type="text" name="Last&nbsp;Name" id="LastName=" value="" required minlength="1" maxlength="29" size="30" /><br />
+				<label class="form-label" for="LastName=">Last Name <strong>*</strong></label><br />
+				<input type="text" class="form-control" id="LastName=" name="Last&nbsp;Name" value="" required minlength="1" maxlength="29" size="30" /><br />
 			</div>
 			<br />
 				
@@ -90,21 +89,21 @@
 				Tell Us Where You Reside
 			</div>
 
-			<div id="rcorners2" class="col-sm">
-				<label for="StreetAddr">Street Address</label><br />
-				<input type="text" name="Street&nbsp;Address" id="StreetAddr" value=""><br />
+			<div id="rcorners2" class="form-check col-sm">
+				<label class="form-label" for="StreetAddr">Street Address</label><br />
+				<input type="text" class="form-control" id="StreetAddr" name="Street&nbsp;Address" value=""><br />
 					
-				<label for="AptNum">Apt Number</label><br />
-				<input type="text" name="Apt&nbsp;Number" id="AptNum" value=""><br />
+				<label class="form-label" for="AptNum">Apt Number</label><br />
+				<input type="text" class="form-control" id="AptNum" name="Apt&nbsp;Number" value=""><br />
 					
-				<label for="City">City</label><br />
-				<input type="text" name="City" id="City" value=""><br />
+				<label class="form-label" for="City">City</label><br />
+				<input type="text" class="form-control" id="City" name="City" value=""><br />
 					
-				<label for="State">State</label><br />
-				<input type="text" name="State" id="State" value="" placeholder="DE" minlength="2" maxlength="2" /><br />
+				<label class="form-label" for="State">State</label><br />
+				<input type="text" class="form-control" id="State" name="State" value="" placeholder="DE" minlength="2" maxlength="2" /><br />
 					
-				<label for="ZipCode">Zip Code</label><br />
-				<input type="text" name="Zip&nbsp;Code" id="ZipCode" value="" minlength="5" maxlength="5" />
+				<label class="form-label" for="ZipCode">Zip Code</label><br />
+				<input type="text" class="form-control" id="ZipCode" name="Zip&nbsp;Code" value="" minlength="5" maxlength="5" />
 			</div>
 			<br />
 				
@@ -112,37 +111,39 @@
 				How Can We Contact You?
 			</div>
 
-			<div id="rcorners2" class="col-sm">		
-				<label for="MemberEmail"><b>Email:(name@example.com)</b></label>
+			<div id="rcorners2" class="form-check col-sm">		
+				<label class="form-label" for="MemberEmail"><b>Email:(name@example.com)</b></label>
 				<br />
-				<input type='text' name='email' />
+				<input type='text' class="form-control" id="email" name='email' />
 				<br /><br />
-				<label for="MobileNumber"><b>Mobile Number:</b></label>
+				<label class="form-label" for="MobileNumber"><b>Mobile Number:</b></label>
 				<br />
-				<input type="text" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<input type="text" class="form-control" id="MobileNumber" name="Mobile&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 				<br />			
-				<label for="AltNumber"><b>Alternate Number:</b></label>
+				<label class="form-label" for="AltNumber"><b>Alternate Number:</b></label>
 				<br />
-				<input type="text" id="AltNumber" name="Alternate&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<input type="text" class="form-control" id="AltNumber" name="Alternate&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 				<br /><br />
 
-				<label for="NumPublish">Can we publish your number in the Church's phone directory?</label><br />
-				<input type="radio" name="Can&nbsp;Publish" value="Yes">
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Can&nbsp;Publish" value="No">
-				<label for="No">No</label><br /><br />
+				<label class="form-label" for="NumPublish">Can we publish your number in the Church's phone directory?</label><br />
+				<input type="radio" class="form-check-input" id="NumPublish" name="Can&nbsp;Publish" value="Yes">
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" class="form-check-input" id="NumPublish" name="Can&nbsp;Publish" value="No">
+				<label class="form-label" for="No">No</label>
+				<br /><br />
 					
-				<label for="ReceiveEmail">Would you like to receive email information regarding church activities?</label><br />
-				<input type="radio" name="Receive&nbsp;Email" value="Yes">
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Receive&nbsp;Email" value="No">
-				<label for="No">No</label><br /><br />
+				<label class="form-label" for="ReceiveEmail">Would you like to receive email information regarding church activities?</label><br />
+				<input type="radio" class="form-check-input" id="ReceiveEmail" name="Receive&nbsp;Email" value="Yes">
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" class="form-check-input" id="ReceiveEmail" name="Receive&nbsp;Email" value="No">
+				<label class="form-label" for="No">No</label>
+				<br /><br />
 					
-				<label for="ReceiveText">Would you like to receive text messages regarding church activities?</label><br />
-				<input type="radio" name="Receive&nbsp;Text" value="Yes">
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Receive&nbsp;Text" value="No">
-				<label for="No">No</label><br /><br />		
+				<label class="form-label" for="ReceiveText">Would you like to receive text messages regarding church activities?</label><br />
+				<input type="radio" id="ReceiveText" class="form-check-input" name="Receive&nbsp;Text" value="Yes">
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" id="ReceiveText" class="form-check-input" name="Receive&nbsp;Text" value="No">
+				<label class="form-label" for="No">No</label><br /><br />		
 			</div>
 			<br />
 				
@@ -152,14 +153,14 @@
 			</div>
 				
 				
-			<div id="rcorners2" class="col-sm">					
-				<label for="MemberDOB"><b>Birth Date: *</b></label><br />
-				<input type="date" name="Member&nbsp;DOB" id="MemberDOB" required />
+			<div id="rcorners2" class="form-check col-sm">					
+				<label class="form-label" for="MemberDOB"><b>Birth Date: *</b></label><br />
+				<input type="date" class="form-control" id="MemberDOB" name="Member&nbsp;DOB" required />
 				<br /><br />
 				
-				<label for="MaritalStatus"><b>Marital Status:</b></label>
+				<label class="form-label" for="MaritalStatus"><b>Marital Status:</b></label>
 				<br />
-				<select name="Marital&nbsp;Status" id="MaritalStatus" required>
+				<select class="form-select" id="MaritalStatus" name="Marital&nbsp;Status" size="1" required>
 					<option value="Single">Single</option>
 					<option value="Married">Married</option>
 					<option value="Widow">Widow</option>
@@ -167,18 +168,18 @@
 				</select>
 				<br /><br />
 				
-				<label for="SpouseName="><b>Spouse Name:</b></label>
+				<label class="form-label" for="SpouseName="><b>Spouse Name:</b></label>
 				<br />
-				<input type="text" name="Spouse&nbsp;Name" id="SpouseName=" value="" />
+				<input type="text" class="form-control id="SpouseName=" name="Spouse&nbsp;Name" value="" />
 				<br />
 					
-				<label for="SpouseNumber"><b>Spouse Phone Number:</b></label>
+				<label class="form-label" for="SpouseNumber"><b>Spouse Phone Number:</b></label>
 				<br />			
-				<input type="text" id="SpouseNumber" name="Spouse&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<input type="text" class="form-control id="SpouseNumber" name="Spouse&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 				<br /><br />
 
-				<label for="WedAnniv"><b>Wedding Anniversary:</b></label><br />
-				<input type="date" name="Wedding&nbsp;Anniversary" id="WedAnniv" />
+				<label class="form-label" for="WedAnniv"><b>Wedding Anniversary:</b></label><br />
+				<input type="date" class="form-control id="WedAnniv" name="Wedding&nbsp;Anniversary" />
 			</div>
 			<br />		
 				
@@ -186,18 +187,23 @@
 				Emergency Contact Information
 			</div>
 								
-			<div id="rcorners2" class="col-sm">
+			<div id="rcorners2" class="form-check col-sm">
 				<b>Who can we contact in case of an emergency? *</b>
-				<br /><br />
-				<label for="EmergencyName=">Full Name: <strong>*</strong></label><br />
-				<input type="text" name="Emergency&nbsp;Name" id="EmergencyName=" value="" required /><br />
+				<br />
+				<br />
+				<label class="form-label" for="EmergencyName=">Full Name: <strong>*</strong></label>
+				<br />
+				<input type="text" class="form-control" id="EmergencyName=" name="Emergency&nbsp;Name" value="" required />
+				<br />
 					
-				<label for="EmergencyNumber">Phone Number: <strong>*</strong></label><br />			
-				<input type="text" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" required />
+				<label class="form-label" for="EmergencyNumber">Phone Number: <strong>*</strong></label>
+				<br />			
+				<input type="text" class="form-control" id="EmergencyNumber" name="Emergency&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" required />
 				<br />
 
-				<label for="EmergencyRelation">Relationship: <strong>*</strong></label><br />
-				<input type="text" name="Emergency&nbsp;Relationship" id="EmergencyRelation" value="" required />
+				<label class="form-label" for="EmergencyRelation">Relationship: <strong>*</strong></label>
+				<br />
+				<input type="text" class="form-control" id="EmergencyRelation" name="Emergency&nbsp;Relationship" value="" required />
 			</div>
 			<br />
 				
@@ -205,41 +211,42 @@
 				Optional Information
 			</div>
 				
-			<div id="rcorners2" class="col-sm">
-				<label for="PrevChurch">Previous Church:</label>
+			<div id="rcorners2" class="form-check col-sm">
+				<label class="form-label" for="PrevChurch">Previous Church:</label>
 				<br />
-				<input type="text" name="Previous&nbsp;Church" id="PrevChurch" value="" />
+				<input type="text" class="form-control" id="PrevChurch" name="Previous&nbsp;Church" value="" />
 				<br />
-				<label for="PrevChurchAddr">Previous Church Location (City & State):</label>
+				<label class="form-label" for="PrevChurchAddr">Previous Church Location (City & State):</label>
 				<br />
-				<input type="text" name="Previous&nbsp;Church&nbsp;Address" id="PrevChurchAddr" value="" />
-				<br />
-				<br />
-				
-				<label for="WorkStatus">Are you employed?</label>
-				<br />
-				<input type="radio" name="Employed" value="Yes" />
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Employed" value="No" />
-				<label for="No">No</label>
+				<input type="text" class="form-control" id="PrevChurchAddr" name="Previous&nbsp;Church&nbsp;Address" value="" />
 				<br />
 				<br />
 				
-				<label for="WorkPlace">Place of Employment:</label>
+				<!-- Employment status -->
+				<label class="form-label" for="WorkStatus">Are you employed?</label>
 				<br />
-				<input type="text" name="Work&nbsp;Place" id="WorkPlace" value="" />
+				<input type="radio" class="form-check-input" name="Employed" value="Yes" />
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" class="form-check-input" name="Employed" value="No" />
+				<label class="form-label" for="No">No</label>
 				<br />
-				<label for="JobTitle">Job Title:</label>
 				<br />
-				<input type="text" name="Job&nbsp;Title" id="JobTitle" value="" />
+				
+				<label class="form-label" for="WorkPlace">Place of Employment:</label>
 				<br />
-				<label for="WorkNumber">Work Phone Number:</label>
+				<input type="text" class="form-control" id="WorkPlace" name="Work&nbsp;Place" value="" />
+				<br />
+				<label class="form-label" for="JobTitle">Job Title:</label>
+				<br />
+				<input type="text" class="form-control" id="JobTitle" name="Job&nbsp;Title" value="" />
+				<br />
+				<label class="form-label" for="WorkNumber">Work Phone Number:</label>
 				<br />		
-				<input type="text" id="WorkNumber" name="Work&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
+				<input type="text" class="form-control" id="WorkNumber" name="Work&nbsp;Number" placeholder="3025551111" oninput="format_phone(this);" maxLength="12" minLength="10" />
 				<br />
-				<label for="Comments">Comments, any major skills, etc.:</label>
+				<label class="form-label" for="Comments">Comments, any major skills, etc.:</label>
 				<br />
-				<input type="text" name="Comments" id="Comments" value="" />
+				<input type="text" class="form-control" id="Comments" name="Comments" value="" />
 			</div>
 			<br />
 				
@@ -247,33 +254,36 @@
 				Additional Household Members
 			</div>
 
-			<div id="rcorners2" class="col-sm">
-				<label for="AddFamName1">Full Name:</label>
+			<div id="rcorners2" class="form-check col-sm">
+				<label class="form-label" for="AddFamName1">Full Name:</label>
 				<br />	
-				<input type="text" name="Additional&nbsp;Family&nbsp;Name1" id="AddFamName1" value="" />
+				<input type="text" class="form-control" id="AddFamName1" name="Additional&nbsp;Family&nbsp;Name1" value="" />
 				<br />
 					
-				<label for="AddFamDOB1">Date of Birth</label>
-				<input type="date" name="Additional&nbsp;Family&nbsp;DOB1" id="AddFamDOB1" value="" />
-				<br /><br />
-
-				<label for="AddFamGender1">Gender</label>
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender1" id="AddFamGender1" value="Male" />
-				<label for="Male">Male</label>&Tab;
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender1" id="AddFamGender1" value="Female" />
-				<label for="Female">Female</label>
-				<br /><br />
-
-				<label for="AddFamSaved1">Saved?</label>
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" id="AddFamSaved1" value="Yes" />
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" id="AddFamSaved1" value="No" />
-				<label for="No">No</label>
-				<br /><br />
-
-				<label for="AddFamRelated1">Relationship to You?</label>
+				<label class="form-label" for="AddFamDOB1">Date of Birth</label>
+				<input type="date" class="form-control" id="AddFamDOB1" name="Additional&nbsp;Family&nbsp;DOB1" value="" />
 				<br />
-				<input type="text" name="How&nbsp;Related1" id="AddFamRelated1" value="" />
+				<br />
+
+				<label class="form-label" for="AddFamGender1">Gender</label>
+				<input type="radio" id="AddFamGender1" name="Additional&nbsp;Family&nbsp;Gender1" value="Male" />
+				<label class="form-label" for="Male">Male</label>&Tab;
+				<input type="radio" id="AddFamGender1" name="Additional&nbsp;Family&nbsp;Gender1" value="Female" />
+				<label class="form-label" for="Female">Female</label>
+				<br />
+				<br />
+
+				<label class="form-label" for="AddFamSaved1">Saved?</label>
+				<input type="radio" id="AddFamSaved1" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" value="Yes" />
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" id="AddFamSaved1" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved1" value="No" />
+				<label class="form-label" for="No">No</label>
+				<br />
+				<br />
+
+				<label class="form-label" for="AddFamRelated1">Relationship to You?</label>
+				<br />
+				<input type="text" class="form-control" id="AddFamRelated1" name="How&nbsp;Related1" value="" />
 				<br /><br />
 			</div>
 			<br />
@@ -282,33 +292,36 @@
 				Additional Household Members
 			</div>
 
-			<div id="rcorners2" class="col-sm">
-				<label for="AddFamName2">Full Name:</label>
+			<div id="rcorners2" class="form-check col-sm">
+				<label class="form-label" for="AddFamName2">Full Name:</label>
 				<br />	
-				<input type="text" name="Additional&nbsp;Family&nbsp;Name2" id="AddFamName2" value="" />
+				<input type="text" class="form-control" id="AddFamName2" name="Additional&nbsp;Family&nbsp;Name2" value="" />
 				<br />
 					
-				<label for="AddFamDOB2">Date of Birth</label>
-				<input type="date" name="Additional&nbsp;Family&nbsp;DOB2" id="AddFamDOB2" value="" />
-				<br /><br />
-
-				<label for="AddFamGender2">Gender</label>
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender2" id="AddFamGender2" value="Male" />
-				<label for="Male">Male</label>&Tab;
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender2" id="AddFamGender2" value="Female"/>
-				<label for="Female">Female</label>
-				<br /><br />
-
-				<label for="AddFamSaved2">Saved?</label>
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" id="AddFamSaved2" value="Yes" />
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" id="AddFamSaved2" value="No" />
-				<label for="No">No</label>
-				<br /><br />
-
-				<label for="AddFamRelated2">Relationship to You?</label>
+				<label class="form-label" for="AddFamDOB2">Date of Birth</label>
+				<input type="date" class="form-control" id="AddFamDOB2" name="Additional&nbsp;Family&nbsp;DOB2" value="" />
 				<br />
-				<input type="text" name="How&nbsp;Related2" id="AddFamRelated2" value="" />
+				<br />
+
+				<label class="form-label" for="AddFamGender2">Gender</label>
+				<input type="radio" id="AddFamGender2" name="Additional&nbsp;Family&nbsp;Gender2" value="Male" />
+				<label class="form-label" for="Male">Male</label>&Tab;
+				<input type="radio" id="AddFamGender2" name="Additional&nbsp;Family&nbsp;Gender2" value="Female"/>
+				<label class="form-label" for="Female">Female</label>
+				<br />
+				<br />
+
+				<label class="form-label" for="AddFamSaved2">Saved?</label>
+				<input type="radio" id="AddFamSaved2" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" value="Yes" />
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" id="AddFamSaved2" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved2" value="No" />
+				<label class="form-label" for="No">No</label>
+				<br />
+				<br />
+
+				<label class="form-label" for="AddFamRelated2">Relationship to You?</label>
+				<br />
+				<input type="text" class="form-control" id="AddFamRelated2" name="How&nbsp;Related2" value="" />
 				<br /><br />
 			</div>
 			<br />
@@ -317,34 +330,38 @@
 				Additional Household Members
 			</div>
 
-			<div id="rcorners2" class="col-sm">
-				<label for="AddFamName3">Full Name:</label>
+			<div id="rcorners2" class="form-check col-sm">
+				<label class="form-label" for="AddFamName3">Full Name:</label>
 				<br />	
-				<input type="text" name="Additional&nbsp;Family&nbsp;Name3" id="AddFamName3" value="" />
+				<input type="text" class="form-control" id="AddFamName3" name="Additional&nbsp;Family&nbsp;Name3" value="" />
 				<br />
 					
-				<label for="AddFamDOB3">Date of Birth</label>
-				<input type="date" name="Additional&nbsp;Family&nbsp;DOB3" id="AddFamDOB3" value="" />
-				<br /><br />
-
-				<label for="AddFamGender3">Gender</label>
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender3" id="AddFamGender3" value="Male" />
-				<label for="Male">Male</label>&Tab;
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Gender3" id="AddFamGender3" value="Female" />
-				<label for="Female">Female</label>
-				<br /><br />
-
-				<label for="AddFamSaved3">Saved?</label>
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" id="AddFamSaved3" value="Yes" />
-				<label for="Yes">Yes</label>&Tab;
-				<input type="radio" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" id="AddFamSaved3" value="No" />
-				<label for="No">No</label>
-				<br /><br />
-
-				<label for="AddFamRelated3">Relationship to You?</label>
+				<label class="form-label" for="AddFamDOB3">Date of Birth</label>
+				<input type="date" class="form-control" id="AddFamDOB3" name="Additional&nbsp;Family&nbsp;DOB3" value="" />
 				<br />
-				<input type="text" name="How&nbsp;Related3" id="AddFamRelated3" value="" />
-				<br /><br />
+				<br />
+
+				<label class="form-label" for="AddFamGender3">Gender</label>
+				<input type="radio" id="AddFamGender3" name="Additional&nbsp;Family&nbsp;Gender3" value="Male" />
+				<label class="form-label" for="Male">Male</label>&Tab;
+				<input type="radio" id="AddFamGender3" name="Additional&nbsp;Family&nbsp;Gender3" value="Female" />
+				<label class="form-label" for="Female">Female</label>
+				<br />
+				<br />
+
+				<label class="form-label" for="AddFamSaved3">Saved?</label>
+				<input type="radio" id="AddFamSaved3" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" value="Yes" />
+				<label class="form-label" for="Yes">Yes</label>&Tab;
+				<input type="radio" id="AddFamSaved3" name="Additional&nbsp;Family&nbsp;Member&nbsp;Saved3" value="No" />
+				<label class="form-label" for="No">No</label>
+				<br />
+				<br />
+
+				<label class="form-label" for="AddFamRelated3">Relationship to You?</label>
+				<br />
+				<input type="text" class="form-control" id="AddFamRelated3" name="How&nbsp;Related3" value="" />
+				<br />
+				<br />
 			</div>
 			<br />
 				
@@ -352,8 +369,8 @@
 				Social Media Acknowledgement
 			</div>
 
-			<div id="rcorners2" class="col-sm">
-				<label for="SMAck" class="wrap">				
+			<div id="rcorners2" class="form-check col-sm">
+				<label class="form-label" for="SMAck" class="wrap">				
 					By clicking the submit button below, you hereby authorize and consent to the use of your image by 
 					Bethel AME Church in Wilmington, DE to be posted publicly on Bethel's social media platforms. 
 					<br /><br />
