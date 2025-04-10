@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Bethel AMEC Membership Form</title>
-	<!-- Updated April 9, 2025 21:30 -->
+    <!-- Updated April 10, 2025 17:45 -->
 </head>
 
 <body class="bg-light">
@@ -37,7 +37,7 @@
                     <div class="row mb-3">                        
                         <div>                            
                             <select class="form-select" id="ChristianStatus" required>
-                                <option value="" disabled selected>Select Christian status</option>
+                                <option value="" disabled selected>Select Christian status *</option>
                                 <option value="New&nbsp;Member">New Member</option>
                                 <option value="New&nbsp;Convert">New Convert</option>                                
                                 <option value="Methodist&nbsp;Transfer">Methodist Transfer</option>
@@ -52,7 +52,7 @@
                     </p>
                     <div class="row mb-3">                        
                         <div>
-                            <select class="form-select" id="TransferLetter" required>
+                            <select class="form-select" id="TransferLetter">
                                 <option value="" disabled selected>Methodist Transfer Certificate?</option>
                                 <option value="YesTransferLetter">Yes</option>
                                 <option value="NoTransferLetter">No</option>
@@ -69,7 +69,7 @@
                     <div class="row mb-3">
                         <div>
                             <select class="form-select" id="AttendService" required>
-                                <option value="" disabled selected>Select service you attend</option>
+                                <option value="" disabled selected>Select service you attend *</option>
                                 <option value="SevenAM">7:00 AM</option>
                                 <option value="NineAM">9:00 AM</option>
                             </select>
@@ -84,7 +84,7 @@
                     <div class="row mb-3">
                         <div>
                             <select class="form-select" id="baptized" required>
-                                <option value="" disabled selected>Select baptismal status</option>
+                                <option value="" disabled selected>Select baptismal status *</option>
                                 <option value="yesbaptized">Baptized</option>
                                 <option value="nobaptized">Not Baptized</option>
                             </select>
@@ -93,7 +93,7 @@
 
                     <!-- Personal Information Section -->
                     <label for="PersonalInfo" class="col-form-label">
-                        <h3 class="text-center">Personal Information:</h3>
+                        <h3 class="text-center">Personal Information: </h3>
                     </label>
 
                     <!-- Membership Title -->
@@ -111,19 +111,19 @@
                         </div>
                     </div>
 
-                    <!-- Personal Information -->
+                    <!-- Gather Name Info  -->
                     <div class="row mb-3">                      
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="First Name" id="FirstName" name="First&nbsp;Name" minlength="1" maxlength="29" size="30" required />
+                            <input type="text" class="form-control" placeholder="First Name *" id="FirstName" name="First&nbsp;Name" minlength="1" maxlength="29" size="30" required />
                         </div>    
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Middle Name" id="MiddleName" name="Middle&nbsp;Name" minlength="1" maxlength="25" size="30" required />
+                            <input type="text" class="form-control" placeholder="Middle Name *" id="MiddleName" name="Middle&nbsp;Name" minlength="1" maxlength="25" size="30" required />
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Last Name" id="LastName" name="Last&nbsp;Name" minlength="1" maxlength="25" size="30" required />
+                            <input type="text" class="form-control" placeholder="Last Name *" id="LastName" name="Last&nbsp;Name" minlength="1" maxlength="25" size="30" required />
                         </div>
                     </div>
                     
@@ -150,11 +150,11 @@
                             <input type="text" class="form-control" placeholder="Zip Code" id="ZipCode" name="Zip&nbsp;Code" minlength="5" maxlength="5" />
                     </div>
 
-                    <!-- Contact Information -->
+                    <!-- Contact Email Information -->
                     <div class="row mt-3 mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                            <input type="text" class="form-control" placeholder="Email" id="email" name='email' required />
+                            <input type="text" class="form-control" placeholder="Email *" id="email" name='email' required />
                     </div>
 
                     <!-- Opt In or Out Question 1 -->
@@ -171,9 +171,10 @@
                         </div>
                     </div>
 
+                    <!-- Contact Phone Information -->
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                        <input type="text" class="form-control" placeholder="Mobile Phone Number" id="MobilePhoneNum" name="Mobile&nbsp;Phone&nbsp;Number" onInput="format_phone(this);" minlength="10" maxlength="12" />
+                        <input type="text" class="form-control" placeholder="Mobile Phone Number *" id="MobilePhoneNum" name="Mobile&nbsp;Phone&nbsp;Number" onInput="format_phone(this);" minlength="10" maxlength="12" required />
                     </div>
 
                     <div class="input-group mb-3">
@@ -212,7 +213,7 @@
                         <label for="DOB" class="col-form-label"><p class="thick">Date of Birth:</p></label>
                         <div class="input-group">
                             <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                            <input type="date" class="form-control" placeholder="Date of Birth" id="MemberDOB" name="Member&nbsp;DOB" required />
+                            <input type="date" class="form-control" placeholder="Date of Birth *" id="MemberDOB" name="Member&nbsp;DOB" required />
                         </div>
                     </div>
 
@@ -221,7 +222,7 @@
                     <div class="row mb-3">
                         <div>
                             <select class="form-select" id="MaritalStatus" required>
-                                <option value="" disabled selected>Select your marital status</option>
+                                <option value="" disabled selected>Select your marital status *</option>
                                 <option value="Single">Single</option>
                                 <option value="Married">Married</option>
                                 <option value="Divorced">Divorced</option>
@@ -258,15 +259,15 @@
                     <div class="row mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Emergency Contact Full Name" id="EmergContactFirstName" name="Emerg&nbsp;Contact&nbsp;First&nbsp;Name" minlength="1" maxlength="50" required />
+                            <input type="text" class="form-control" placeholder="Emergency Contact Full Name *" id="EmergContactFirstName" name="Emerg&nbsp;Contact&nbsp;First&nbsp;Name" minlength="1" maxlength="50" required />
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                            <input type="text" class="form-control" placeholder="Emergency Contact Phone Number" id="EmergContactPhoneNum" name="Emerg&nbsp;Contact&nbsp;Phone&nbsp;Number" oninput="format_phone(this);" minlength="10" maxlength="12" required />
+                            <input type="text" class="form-control" placeholder="Emergency Contact Phone Number *" id="EmergContactPhoneNum" name="Emerg&nbsp;Contact&nbsp;Phone&nbsp;Number" oninput="format_phone(this);" minlength="10" maxlength="12" required />
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-pencil"></i></span>
-                            <input type="text" class="form-control" placeholder="Emergency Contact Relationship" id="EmergencyRelation" name="Emergency&nbsp;Relationship" required />
+                            <input type="text" class="form-control" placeholder="Emergency Contact Relationship *" id="EmergencyRelation" name="Emergency&nbsp;Relationship" required />
                         </div>
                     </div>
 
@@ -309,7 +310,7 @@
                     
                     <!-- Additional Household Information 1 -->
                     <label for="HouseholdInfo" class="col-form-label"><h3>Additional Household Information:</h3></label>
-                    <p class="">First Household Member</p>
+                    <p class="">First Household Member (optional)</p>
                     <div class="row mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
@@ -337,7 +338,7 @@
                     </div>
 
                     <!-- Additional Household Information 2 -->
-                    <p class="">Second Household Member</p>
+                    <p class="">Second Household Member (optional)</p>
                     <div class="row mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
@@ -365,7 +366,7 @@
                     </div>
 
                     <!-- Additional Household Information 3 -->
-                    <p class="">Third Household Member</p>
+                    <p class="">Third Household Member (optional)</p>
                     <div class="row mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
