@@ -1,16 +1,3 @@
-function showOtherTxt(){
-		
-    var OTBox = document.getElementById("OT");
-    var OTCondBox = document.getElementById("condOT")
-
-    if (OTBox.checked) {
-        OTCondBox.style.display="block";
-    }
-    else {
-        OTCondBox.style.display="none";
-    }
-}
-
 function validateEmail(emailId) {
 var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     if(emailId.value.match(mailformat))
