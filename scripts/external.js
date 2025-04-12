@@ -1,18 +1,3 @@
-function validateEmail(emailId) {
-var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if(emailId.value.match(mailformat))
-        {
-            document.form1.text1.focus();
-            return true;
-        }
-    else
-        {
-            alert("Invalid email address.");
-            document.form1.text1.focus();
-            return false;
-        }
-}
-
 function validateEmail() {
     var email = document.getElementById("emailInput").value;
     var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -23,24 +8,22 @@ function validateEmail() {
     return true;
 }
 
-// phone number format: nnn-nnn-nnnn
-/* removed this script, looking for better one
-function format_phone(textfield){
-    var val=textfield.value;
-    val=val.replace(/[^\d]/g, ''); // remove all non-digits
-    if(val.length>10) // crop surplus characters
-    {
-        val=val.substring(0,10);
-    }
+IMask(document.getElementById('PhoneID1'), {
+    mask: '(000) 000-0000'
+});
 
-    if(val.length>2) // first dash
-    {
-        val=val.replace(val.substring(0,3), val.substring(0,3)+'-');
-    }
+IMask(document.getElementById('PhoneID2'), {
+    mask: '(000) 000-0000'
+});
 
-    if(val.length>6) // second dash
-    {
-        val=val.replace(val.substring(3,7), val.substring(3,7)+'-');
-    }
-    textfield.value=val;
-} */
+IMask(document.getElementById('PhoneID3'), {
+    mask: '(000) 000-0000'
+});
+
+IMask(document.getElementById('PhoneID4'), {
+    mask: '(000) 000-0000'
+});
+
+IMask(document.getElementById('PhoneID5'), {
+    mask: '(000) 000-0000'
+});
