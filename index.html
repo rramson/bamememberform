@@ -7,19 +7,19 @@
     <link rel="stylesheet" type="text/css" href="css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Bethel AMEC Membership Form</title>
-    <!-- Updated April 12, 2025 11:10 -->
+    <!-- Updated April 12, 2025 17:58 -->
 </head>
 
 <body class="bg-light">
     <div class="container">
-        <div class="row mt-5">            
+        <div class="row mt-5">
             <div class="col-sm-6 bg-white m-auto">
                 <div id="rcorner2label">
                     <h2 class="text-center pt-3">Welcome to Bethel AMEC</h2>                    
                 </div>
                 <p class="text-center text-muted lead">Please complete the form below.</p>           
                 
-                <!-- Form Start -->                
+                <!-- Form Start -->
                 <form method="post" action="https://formsubmit.co/7236f9e9132ee77d99d4f2350055f9ff">
 
                 <!-- Honeypot -->
@@ -34,30 +34,30 @@
                     <!-- Membership Status -->
                     <label for="ChristianStatus" class="col-form-label"><p class="thick">Member Status:</p></label>
                     
-                    <div class="row mb-3">                        
-                        <div>                            
+                    <div class="row mb-3">
+                        <div>
                             <select class="form-select" id="ChristianStatus" required>
                                 <option value="" disabled selected>Select Christian status *</option>
                                 <option value="New&nbsp;Member">New Member</option>
-                                <option value="New&nbsp;Convert">New Convert</option>                                
+                                <option value="New&nbsp;Convert">New Convert</option>
                                 <option value="Methodist&nbsp;Transfer">Methodist Transfer</option>
                                 <option value="Watch&nbsp;Care">Watch Care</option>
                                 <option value="Return&nbsp;Member">Returning Bethel Member</option>
-                            </select>                            
+                            </select>
                         </div>
                     </div>
 
-                    <p class="text-center text-muted">If you are transfering from another Methodist church, 
+                    <p class="text-center text-muted">If you are transfering from another Methodist church,
                         do you have a letter of transfer from your previous church?
                     </p>
-                    <div class="row mb-3">                        
+                    <div class="row mb-3">
                         <div>
                             <select class="form-select" id="TransferLetter">
                                 <option value="" disabled selected>Methodist Transfer Certificate?</option>
                                 <option value="YesTransferLetter">Yes</option>
                                 <option value="NoTransferLetter">No</option>
                                 <option value="Not&nbsp;Applicable">Not Applicable</option>
-                            </select>                            
+                            </select>
                         </div>
                     </div>
                     
@@ -97,7 +97,7 @@
                     </label>
 
                     <!-- Membership Title -->
-                    <div class="row mb-3">                        
+                    <div class="row mb-3">
                         <div>
                             <select class="form-select" id="MembershipTitle" required>
                                 <option value="" disabled selected>Select your title: *</option>
@@ -112,7 +112,7 @@
                     </div>
 
                     <!-- Gather Name Info  -->
-                    <div class="row mb-3">                      
+                    <div class="row mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
                             <input type="text" class="form-control" placeholder="First Name *" id="FirstName" name="First&nbsp;Name" minlength="1" maxlength="29" size="30" required />
@@ -148,7 +148,7 @@
                                 <option value="" disabled selected>State</option>
                                 <option value="DE">Delaware</option>
                                 <option value="PA">Pennsylvania</option>
-                                <option value="MD">Maryland</option>                                
+                                <option value="MD">Maryland</option>
                                 <option value="NJ">New Jersey</option>
 
                                 <option value=""></option>
@@ -240,13 +240,13 @@
                     <!-- Contact Phone Information -->
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                        <input type="text" class="form-control" placeholder="Mobile Phone Number *" id="MobilePhoneNum" name="Mobile&nbsp;Phone&nbsp;Number" minlength="10" maxlength="10" required />
+                        <input type="text" class="form-control" placeholder="Mobile Phone Number *" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" id="PhoneID1" name="Mobile&nbsp;Phone&nbsp;Number" minlength="10" maxlength="14" required />
                     </div>
 
                     <!-- Contact Alternate Phone Information -->
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                        <input type="text" class="form-control" placeholder="Alternate Phone Number" id="AltPhoneNum" name="Alt&nbsp;Phone&nbsp;Number" minlength="10" maxlength="10" />
+                        <input type="text" class="form-control" placeholder="Alternate Phone Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" id="PhoneID2" name="Alt&nbsp;Phone&nbsp;Number" minlength="10" maxlength="14" />
                     </div>
                     <!-- Opt In or Out Question 2 -->
 				    <label for="NumPublish" class="col-form-label">
@@ -303,15 +303,11 @@
                     <div class="row mb-3">
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Spouse First Name" id="SpouseFirstName" name="Spouse&nbsp;First&nbsp;Name" minlength="1" maxlength="29" size="30" />
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Spouse Last Name" id="SpouseLastName" name="Spouse&nbsp;Last&nbsp;Name" minlength="1" maxlength="25" size="30" />
+                            <input type="text" class="form-control" placeholder="Spouse First & Last Name" id="SpouseFullName" name="Spouse&nbsp;Full&nbsp;Name" minlength="1" maxlength="49" size="50" />
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                            <input type="text" class="form-control" placeholder="Spouse Phone Number" id="SpousePhoneNum" name="Spouse&nbsp;Phone&nbsp;Number" minlength="10" maxlength="10" />
+                            <input type="text" class="form-control" placeholder="Spouse Phone Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" id="PhoneID3" name="Spouse&nbsp;Phone&nbsp;Number" minlength="10" maxlength="14" />
                         </div>
                         <label for="DOB" class="col-form-label"><p class="thick">Wedding Anniversary:</p></label>
                         <div class="input-group mb-3">
@@ -330,7 +326,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                            <input type="text" class="form-control" placeholder="Emergency Contact Phone Number *" id="EmergContactPhoneNum" name="Emerg&nbsp;Contact&nbsp;Phone&nbsp;Number" minlength="10" maxlength="10" required />
+                            <input type="text" class="form-control" placeholder="Emergency Contact Phone Number *" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"  id="PhoneID4" name="Emerg&nbsp;Contact&nbsp;Phone&nbsp;Number" minlength="10" maxlength="14" required />
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-pencil"></i></span>
@@ -359,7 +355,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                            <input type="text" class="form-control" placeholder="Work Phone Number" id="WorkPhoneNum" name="Work&nbsp;Phone&nbsp;Number" minlength="10" maxlength="10" />
+                            <input type="text" class="form-control" placeholder="Work Phone Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" id="PhoneID5" name="Work&nbsp;Phone&nbsp;Number" minlength="10" maxlength="14" />
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="fa fa-pencil"></i></span>
@@ -484,6 +480,7 @@
             </div>
         </div>                
     </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="scripts/external.js"></script>
 </body>
 </html>
