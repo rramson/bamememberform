@@ -24,6 +24,7 @@ function validateEmail() {
 }
 
 // phone number format: nnn-nnn-nnnn
+/* removed this script, looking for better one
 function format_phone(textfield){
     var val=textfield.value;
     val=val.replace(/[^\d]/g, ''); // remove all non-digits
@@ -42,4 +43,4 @@ function format_phone(textfield){
         val=val.replace(val.substring(3,7), val.substring(3,7)+'-');
     }
     textfield.value=val;
-}
+} */
