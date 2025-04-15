@@ -27,3 +27,21 @@ IMask(document.getElementById('PhoneID4'), {
 IMask(document.getElementById('PhoneID5'), {
     mask: '(000) 000-0000'
 });
+
+(function () {
+    'use strict'
+  
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
