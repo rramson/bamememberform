@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Bethel AMEC Membership Form</title>
-    <!-- Updated April 29, 2025 17:32 -->
+    <!-- Updated April 29, 2025 17:54 -->
 </head>
 
 <body class="bg-light">
@@ -54,8 +54,8 @@
 
                     <!-- Request for Methodist Certificate -->
                     <div class="row mb-3">
-                        <p class="text-center text-muted">If you are transfering from another Methodist church,
-                        do you have a letter of transfer from your previous church?</p>
+                        <label for="TransferLetter" class="text-center text-muted">If you are transfering from another Methodist church,
+                        do you have a letter of transfer from your previous church?</label>
                         <div>
                             <select class="form-select" id="TransferLetter" name="Methodist&nbsp;Transfer&nbsp;Certificate">
                                 <option value="" disabled selected>Methodist Transfer Certificate?</option>
@@ -68,7 +68,7 @@
 
                     <!-- Choose Which Service You Attend -->
                     <div class="row mb-3">
-                        <label class="col-form-label fs-4 fw-bold">Which Service Do You Attend? *</label>
+                        <label for="AttendService" class="col-form-label fs-4 fw-bold">Which Service Do You Attend? *</label>
                         <div>
                             <select class="form-select" id="AttendService" name="Attend&nbsp;Service" required>
                                 <option value="" disabled selected>Service Time</option>
@@ -567,6 +567,9 @@
                             This authorization is irrevocable, and waives all rights, claims, and demands against
                             the AME Church in connection with or arising out of the reproduction, publication or other 
                             use of photograph or other physical images of you.
+                            <br><br>
+                            If you do not wish to have your image used, please send an email request declining the above to the church 
+                            office at <a href="mailto:info@bethelwilmg.org?subject=Opt%20Out%20Image%20Consent">Bethel Church Admin</a>.
                         </p>
                     </div>
 
