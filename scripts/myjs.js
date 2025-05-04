@@ -19,4 +19,16 @@ function enableSCS1(answer) {
   if (answer.value === 'MTransfer') {
     document.getElementById('mCert').style.display = 'block';
   }
+  else if (answer.value === 'NewMember') {
+    document.getElementById('mCert').style.display = 'none';
+  }
+  else if (answer.value === 'WatchCare') {
+    document.getElementById('mCert').style.display = 'none';
+  }
+  else if (answer.value === 'ReturningMember') {
+    document.getElementById('mCert').style.display = 'none';
+  }  
+  else {
+    document.getElementById('mCert').style.display = 'none';
+  }
 };
