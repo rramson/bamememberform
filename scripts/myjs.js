@@ -16,7 +16,7 @@ function enableSCS(answer) {
 
 function enableSCS1(answer) {
   console.log(answer.value);
-  if (answer.value === 'MTransfer') {
+  if (answer.value === 'MethodistTransfer') {
     document.getElementById('mCert').style.display = 'block';
   }
   else if (answer.value === 'NewMember') {
