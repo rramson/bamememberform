@@ -32,3 +32,25 @@ function enableSCS1(answer) {
     document.getElementById('mCert').style.display = 'none';
   }
 };
+
+function enableAFI(answer) {
+  console.log(answer.value);
+  if (answer.value === 'Yes') {
+    document.getElementById('AFI1').style.display = 'block';
+    document.getElementById('AFI2').style.display = 'block';
+    document.getElementById('AFI3').style.display = 'block';
+    document.getElementById('AFI4').style.display = 'block';
+  }
+  else if (answer.value === 'No') {
+    document.getElementById('AFI1').style.display = 'none';
+    document.getElementById('AFI2').style.display = 'none';
+    document.getElementById('AFI3').style.display = 'none';
+    document.getElementById('AFI4').style.display = 'none';
+  }  
+  else {
+    document.getElementById('AFI1').style.display = 'none';
+    document.getElementById('AFI2').style.display = 'none';
+    document.getElementById('AFI3').style.display = 'none';
+    document.getElementById('AFI4').style.display = 'none';
+  }
+};
