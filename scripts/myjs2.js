@@ -13,24 +13,3 @@ document.querySelectorAll('input[name="maritalStatus"]').forEach(radio => {
 if (document.getElementById('married').checked) {
     document.getElementById('spouseInfo').style.display = 'block';
 }
-
-const form = document.getElementById('myForm');
-form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent default form submission
-    const formData = new FormData(form);
-    // Add any other logic to process the data (e.g., send it to a server)
-    console.log(formData);  // or send it to your server
-
-    //Example using fetch API
-    // fetch('/your-server-endpoint', {
-    //     method: 'POST',
-    //     body: formData
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //      console.log('Success:', data);
-    //  })
-    //  .catch(error => {
-    //      console.error('Error:', error);
-    //  });
-});
