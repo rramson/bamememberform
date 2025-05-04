@@ -3,6 +3,15 @@ function enableSCS(answer) {
   if (answer.value === 'Yes') {
     document.getElementById('SCS1').style.display = 'block';
   }
+  else if (answer.value === 'No') {
+    document.getElementById('SCS1').style.display = 'none';
+  }
+  else if (answer.value === 'NoWantMoreInfo') {
+    document.getElementById('SCS1').style.display = 'none';
+  }
+  else {
+    document.getElementById('SCS1').style.display = 'none';
+  }
 };
 
 function enableSCS1(answer) {
