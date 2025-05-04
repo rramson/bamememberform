@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Bethel AMEC Membership Form</title>
-    <!-- Updated Nay 4, 2025 13:41-->
+    <!-- Updated Nay 4, 2025 15:39-->
 </head>
 
 <body class="bg-light">
@@ -71,9 +71,9 @@
                         <label for="SavedChristianStatus" class="col-form-label fs-4 fw-bold">What is your Christian
                             Status? *</label>
                         <div>
-                            <select class="form-select" id="SavedChristianStatus" name="Christian&nbsp;Status"
+                            <select class="form-select" id="SavedChristianStatus" name="Christian&nbsp;Status" required
                                 onchange="enableSCS1(this)">
-                                <option value="" disabled selected>Christian status</option>
+                                <option value="NewConvert" disabled selected>Christian status</option>
                                 <option value="NewMember">New Member</option>
                                 <option value="MethodistTransfer">Methodist Transfer</option>
                                 <option value="WatchCare">Watch Care</option>
@@ -320,11 +320,11 @@
                     <!-- Marital Status -->
                     <div class="row mb-3">
                         <label class="col-form-label fw-bold">Marital Status: *</label>
-                        <div class="input-group mb-3">                            
+                        <div class="input-group mb-3" id="maritalStatus">                            
                             <span class="input-group-text"><i class="fa-solid fa-ring"></i></span>
                             <div class="form-check form-check-inline">
-                                <input type="radio" id="single" name="maritalStatus" value="single">
-                                <label for="single">Single</label>
+                                <input type="radio" id="single" name="maritalStatus" value="single" required>
+                                <label for="single">Single</label>                                
                             </div>
                             <div class="form-check form-check-inline">
                                 <input type="radio" id="married" name="maritalStatus" value="married">
@@ -337,9 +337,9 @@
                             <div class="form-check form-check-inline">
                                 <input type="radio" id="widowed" name="maritalStatus" value="widowed">
                                 <label for="widowed">Widowed</label>
-                            </div>
-                        </div>
-                        <div class="invalid-feedback">Please select a valid marital status.</div>
+                                <div class="invalid-feedback">Please select a valid marital status.</div>
+                            </div>                            
+                        </div>                                            
                     </div>
 
                     <!-- Spouse Information -->
@@ -439,13 +439,14 @@
                     <!-- Additional Family Information -->
                     <div class="row mb-3">
                         <label for="addFamInfo" class="col-form-label fs-4 fw-bold">Would you like to add more family
-                            members?</label>
+                            members? *</label>
                         <div>
-                            <select class="form-select" id="addFamInfo" name="addFamInfo" onchange="enableAFI(this)">
+                            <select class="form-select" id="addFamInfo" name="addFamInfo" onchange="enableAFI(this)" required>
                                 <option value="" disabled selected>Additional Household Members?</option>
                                 <option value="Yes">Yes</option>
                                 <option value="No">No</option>
                             </select>
+                            <div class="invalid-feedback">Please select a valid option.</div>
                         </div>
                     </div>
 
@@ -610,7 +611,6 @@
                             onclick="validateEmail(document.form1.Member&nbspEmail.value)">Submit</button>
                         <button class="btn btn-danger btn-sm" type="reset" value="Reset">Reset</button>
                     </div>
-
                     <!-- Form Close -->
                 </form>
             </div>
